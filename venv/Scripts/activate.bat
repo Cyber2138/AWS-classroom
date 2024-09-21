@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\ADMIN\Desktop\Bypass project\venv
+=======
+set VIRTUAL_ENV=C:\Users\admin dell\Desktop\demo\venv
+>>>>>>> 131fe157034d99152d6138ae914eb0576b709419
 
 if not defined PROMPT set PROMPT=$P$G
 
