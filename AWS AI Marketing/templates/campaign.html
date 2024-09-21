@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        form, .card {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background: #0056b3; /* Darker on hover */
+}
+
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campaign Management</h1>
+    </header>
+    <main>
+        <form>
+            <h2>Create Campaign</h2>
+            <input type="text" placeholder="Campaign Name" required>
+            <input type="date" required>
+            <input type="number" placeholder="Budget" required>
+            <a type="submit" href = '/dashboard' class="btn btn-primary" target="_blank">Create Campaign</a>
+        </form>
+        <div class="card">
+            <h2>Current Campaigns</h2>
+            <p>1. Spring Sale - Budget: $500 - Active</p>
+            <p>2. Holiday Promotions - Budget: $300 - Paused</p>
+        </div>
+    </main>
+</body>
+</html>

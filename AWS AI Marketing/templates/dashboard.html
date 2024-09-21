@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 10px;
+            }
+        }
+
+        .btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0; /* Space between buttons */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background: #0056b3; /* Darker on hover */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+    <main>
+        <div class="card">
+            <h2>Welcome Back, John!</h2>
+            <p>Your personalized marketing insights await.</p>
+        </div>
+        <div class="card">
+            <h2>Recent Campaigns</h2>
+            <p>You have launched 3 campaigns in the last month.</p>
+        </div>
+        <div class="card">
+            <h2>Recommendations</h2>
+            <p>Based on your activity, consider targeting your new campaign to younger audiences.</p>
+        </div>
+        <div>
+            <a href="/segmentation" class="btn  btn-primary">View Segmentation</a>
+        </div>
+    </main>
+</body>
+</html>
